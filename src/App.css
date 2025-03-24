@@ -1,0 +1,377 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7fa;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Resume Container */
+.resume-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 3rem auto;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header Section */
+.resume-header {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.resume-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info a:hover {
+  transform: translateY(-2px);
+  text-decoration: underline;
+}
+
+.contact-info span.divider {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Main Content */
+.resume-content {
+  padding: 2rem;
+}
+
+/* Section Styling */
+.resume-section {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.resume-section:last-child {
+  margin-bottom: 0;
+}
+
+.resume-section h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #4ca1af;
+  display: inline-block;
+}
+
+/* About Section */
+.about-content {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid #4ca1af;
+  line-height: 1.8;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+.skill-category h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e9ecef;
+  font-weight: 600;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-category li {
+  margin-bottom: 0.7rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.skill-category li::before {
+  content: "▹";
+  color: #4ca1af;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Experience Section */
+.experience-item {
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid #e9ecef;
+  position: relative;
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #4ca1af;
+  left: -7px;
+  top: 6px;
+}
+
+.experience-item h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.company {
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.experience-item ul {
+  padding-left: 1.2rem;
+}
+
+.experience-item li {
+  margin-bottom: 0.7rem;
+}
+
+/* Education Section */
+.education-item {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.education-item h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.institution {
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+
+.education-grade {
+  background-color: #4ca1af;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .resume-container {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .resume-header {
+    padding: 2rem 1rem;
+  }
+
+  .resume-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-info {
+    gap: 1rem;
+  }
+
+  .resume-content {
+    padding: 1.5rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .resume-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .contact-info span.divider {
+    display: none;
+  }
+
+  .resume-content {
+    padding: 1rem;
+  }
+}
+
+/* Dino Game Styles */
+.dino-game-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.dino-game-section h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.dino-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.dino-instructions {
+  margin-bottom: 1rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.dino-canvas {
+  border: 2px solid #dee2e6;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.game-over-message {
+  margin-top: 1rem;
+  color: #e74c3c;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.dino-action-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #4ca1af;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dino-action-button:hover {
+  background-color: #3d8a98;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dino-action-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .dino-game-container {
+    max-width: 100%;
+  }
+  
+  .dino-canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.dino-score-display {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  font-weight: 500;
+  color: #333;
+}
+
+.dino-score-display span {
+  padding: 0.5rem 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
