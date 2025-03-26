@@ -11,49 +11,48 @@ const Resume: React.FC = () => {
   const resumeData = {
     header: {
       name: "Vipul Nagpal",
-      title: "Full Stack Engineer",
+      title: "Software Engineer",
       contactInfo: {
         linkedin: "vipul-nagpal-28801b168",
         email: "vipulnagpal51@gmail.com",
         phone: "8168082096",
       }
     },
-    about: "Full Stack Engineer with expertise in C#, ASP.NET, .NET Core, and React.js, experienced in developing scalable web applications, automating business processes, and managing teams.",
+    about: "Software Engineer with 5 years of experience in .NET Core, C#, React.js, and Microservices, specializing in scalable system architecture and API development. Skilled in designing and implementing microservices-based solutions, enhancing system scalability, performance, and maintainability. Experienced in writing clean, efficient code, applying design patterns, and optimizing backend performance for high-traffic applications.",
     skills: [
+      {
+        name: "Backend & API Development",
+        items: [
+          ".NET Core",
+          "ASP.NET",
+          "RESTful APIs",
+          "Minimal APIs",
+          "Microservices"
+        ]
+      },
       {
         name: "Languages",
         items: [
           "C#",
+          "TypeScript",
           "Python",
           "JavaScript",
           "C/C++"
         ]
       },
       {
-        name: "Frameworks and Libraries",
+        name: "Frontend",
         items: [
-          ".NET / .NET Core",
           "React.js",
           "Blazor",
-          "VSTO",
-          "WPF",
-          "EF Core",
-          "Cypress",
-          "MOQ"
-        ]
-      },
-      {
-        name: "Web Development",
-        items: [
           "HTML",
           "CSS",
-          "RESTful APIs",
-          "Microservices",
-          "CRUD applications"
+          "VSTO",
+          "WPF"
         ]
       },
       {
-        name: "Database",
+        name: "Databases",
         items: [
           "SQL Server",
           "MySQL",
@@ -61,22 +60,31 @@ const Resume: React.FC = () => {
         ]
       },
       {
-        name: "Cloud & Messaging",
+        name: "Cloud & DevOps",
         items: [
-          "AWS Lambda",
-          "SQS"
+          "AWS (Lambda, SQS, S3)",
+          "Docker",
+          "CI/CD"
         ]
       },
       {
-        name: "Tools",
+        name: "Testing & Security",
         items: [
-          "Visual Studio",
+          "Unit Testing",
+          "Cypress",
+          "MOQ",
+          "Secure Coding"
+        ]
+      },
+      {
+        name: "Tools & Version Control",
+        items: [
           "Git",
-          "Agile (Scrum)",
-          "Postman",
           "Jira",
+          "Postman",
+          "Kibana",
           "Fiddler",
-          "Kibana"
+          "Agile (Scrum)"
         ]
       }
     ],
@@ -86,52 +94,26 @@ const Resume: React.FC = () => {
         company: "Zocdoc",
         period: "Oct 2022 - Present",
         responsibilities: [
-          "Led a team to deliver high-quality web applications using .NET",
-          "Developed and deployed over 30 robust REST APIs for smooth integration and secure data interchange in backend systems",
-          "Managed multiple endpoints across diverse systems, optimizing performance and reliability",
-          "Collaborated with 4 multidisciplinary teams to optimize processes, align with project goals, and deliver top-quality solutions on schedule",
-          "Worked on frontend enhancements using React.js for certain projects"
+          "Led migration of a monolithic system to microservices, improving scalability by 50% and reducing deployment time by 60%, while refactoring API architecture to enhance response times by 40% through caching, indexing, and load balancing",
+          "Engineered and deployed 30+ high-performance REST APIs, processing 24M+ requests/month with enhanced security",
+          "Collaborated with 4 multidisciplinary teams, ensuring on-time feature releases with 98%+ success rate",
+          "Increased unit test coverage by 85%, reducing post-production bugs and improving reliability",
+          "Leveraged AWS Lambda & DynamoDB Streams for real-time sync, reducing stale appointment data incidents by 80%"
         ]
       },
       {
         title: "Senior Associate",
         company: "State Street Corporation",
-        period: "Apr 2022 - Sept 2022",
+        period: "Jan 2020 - Sept 2022",
         responsibilities: [
-          "Developed a web application with a thematic focus using React, HTML, CSS, and .NET C#, incorporating secure authorization and seamless integration across applications",
-          "Designed and launched Minimal APIs with .NET 8, enabling efficient data interaction and scalable backend systems",
-          "Created dynamic and adaptive user interfaces using React.js, enhancing user engagement and the visual interface",
-          "Supervised a team of 5 interns in handling .NET automation projects, optimizing processes and workflows, achieving over 150 FTE savings annually",
-          "Ensured project alignment with corporate goals, delivering high-quality solutions within tight deadlines while fostering a collaborative team environment"
-        ]
-      },
-      {
-        title: "Associate 2",
-        company: "State Street Corporation",
-        period: "Aug 2021 - March 2022",
-        responsibilities: [
-          "Developed over 10 VSTO Excel automations to boost client efficiency",
-          "Optimized application performance to ensure seamless and error-free deployments"
-        ]
-      },
-      {
-        title: "Associate",
-        company: "State Street Corporation",
-        period: "Jul 2020 - Jul 2021",
-        responsibilities: [
-          "Developed an Outlook Add-In utilizing VSTO and WPF, improving email handling and boosting features",
-          "Provided .NET automation tools that lowered staff workload by 30%",
-          "Worked closely with stakeholders to collect requirements and efficiently deploy automation solutions"
-        ]
-      },
-      {
-        title: "Artificial Intelligence and Automation Intern",
-        company: "State Street Corporation",
-        period: "Jan 2020 - Jun 2020",
-        responsibilities: [
-          "Supported the evaluation of feasibility and complexity with CSRQ metrics, prioritizing initiatives aligned with business demands, which led to a reduction of 14 full-time equivalents (FTE)",
-          "Improved efficiency in data management by managing and updating the employee portal with C# .NET, HTML, CSS, and JavaScript"
-        ]
+          "Developed a web application with a thematic focus using React, HTML, CSS, and .NET C#, incorporating secure authorization and seamless integration across applications to enhance both user accessibility and system efficiency",
+          "Designed and deployed Minimal APIs with .NET 8, cutting backend processing time by 20%",
+          "Automated workflows with 10+ VSTO Excel solutions, boosting productivity by 45+ hours per month",
+          "Mentored & led 5 interns, streamlining automation workflows and achieving 150+ FTE savings annually",
+          "Eliminated manual errors by 90% through workflow automation, improving data accuracy & compliance",
+          "Aligned projects with corporate objectives, delivering features 2 weeks ahead of schedule and improving deployment efficiency"
+        ],
+        subtitle: "Promoted from Intern → Associate → Associate 2 → Senior Associate"
       }
     ],
     education: [
@@ -144,24 +126,23 @@ const Resume: React.FC = () => {
     ],
     projects: [
       {
-        title: "Company Project Working Hours Management System",
-        subtitle: "React.js, SQL Server, Microservices • Jun 2024 - Oct 2024",
+        title: "Appointment Booking System Microservice",
+        subtitle: ".NET, SQL Server • March 2024 - Ongoing",
         details: [
-          "Created a system for managing working hours, allowing Providers to define their availability depending on various locations",
-          "Used React.js to develop the front-end, ensuring a smooth and responsive user interface",
-          "Developed the backend with C# .NET to achieve seamless data mapping and service integration",
-          "Facilitated the effective mapping and handling of working hours across different modules of the application"
+          "Redesigned appointment booking architecture from monolith to microservices, reducing downtime by 30%",
+          "Built a robust appointment management system supporting seamless booking, modification, and cancellation, improving user experience and system reliability by 35%",
+          "Configured AWS CloudWatch for real-time performance monitoring, reducing incident resolution time by 50%",
+          "Implemented on-demand capacity scaling in DynamoDB, handling 100K+ appointment queries per minute without performance degradation"
         ]
       },
       {
-        title: "Appointment Booking System Microservice",
-        subtitle: ".NET, SQL Server • Jan 2023 - Jun 2023",
+        title: "Company Project Working Hours Management System",
+        subtitle: "React.js, SQL Server, Microservices",
         details: [
-          "Transitioned the Appointment Booking System from a single monolithic structure to a microservices-based architecture",
-          "Engineered a flexible solution that allows users to book, modify, and cancel appointments effortlessly",
-          "Incorporated role-based access control alongside email and SMS notifications",
-          "Achieved efficient integration between the frontend and backend by employing Minimal APIs",
-          "Leveraged .NET C# for backend processes and SQL Server for database handling"
+          "Created a provider scheduling system, optimizing workforce availability across multiple locations",
+          "Developed a responsive React.js frontend, ensuring smooth navigation and user-friendly interactions",
+          "Structured a highly scalable SQL Server database model, ensuring efficient handling of large datasets",
+          "Reduced deployment bugs by 40% through rigorous unit and integration testing"
         ]
       }
     ]
